@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ROTOR.PRO</title>
+  <link rel="stylesheet" href="styles/styles-chainsaw.css">
+  <link rel="stylesheet" href="styles/styles-items-list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="node_modules/nouislider/dist/nouislider.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="node_modules/nouislider/dist/nouislider.js"></script>
+<header class="top">
+  <div class="main-header">
+    <h1 class="logo">ROTOR.PRO</h1>
+    <div class="switch-panel">
+      <img class="switch-сhainsaw picture-btn" src="pictures/switch-сhainsaw.png" alt="Бензопилы">
+      <img class="switch-bikes picture-btn" src="pictures/switch-bikes.png" alt="Велосипеды">
+      <div class="indication-underline-block">
+        <div class="indication-line"></div>
+      </div>
+    </div>
+    <div class="buttons-panel">
+      <img class="button-img picture-btn" src="pictures/search.png" alt="Поиск">
+      <img class="button-img picture-btn" src="pictures/cart.png" alt="Корзина">
+      <img class="button-img picture-btn" src="pictures/account.png" alt="Войти">
+    </div>
+  </div>
+  <nav class="navigator">
+    <h2 class="navigator-btn text-underline">Горные</h2>
+    <h2 class="navigator-btn text-underline">Городские</h2>
+    <h2 class="navigator-btn text-underline">Шоссейные</h2>
+    <h2 class="navigator-btn text-underline">Детские</h2>
+    <h2 class="navigator-btn text-underline">Запчасти</h2>
+    <h2 class="navigator-btn text-underline">Бренды</h2>
+  </nav>
+</header>
+<main>
+  <section class="items-list">
+    <div class="items-list-header">
+      <h2 class="list-search-title">Велосипеды</h2>
+      <div class="header-underline"></div>
+    </div>
+    <div class="items-list-main">
+      <div class="items-list-filters">
+        <div class="brands-filter">
+          <div class="brands-filter-header">
+            <h3 class="brands-filter-title">Бренды</h3>
+            <div class="arrow-up"></div>
+          </div>
+          <div class="brands-filter-main">
+            <input type="text" class="brands-filter-search" placeholder="Например:Аист">
+            <div class="checkbox-name-container">
+              <input id="aist" type="checkbox" class="filter-brand" >
+              <label for="aist" class="label-filter">Aist</label>
+            </div>
+            <div class="checkbox-name-container">
+              <input id="forward" type="checkbox" class="filter-brand" >
+              <label for="forward" class="label-filter">Forward</label>
+            </div>
+            <div class="checkbox-name-container">
+              <input id="format" type="checkbox" class="filter-brand" >
+              <label for="format" class="label-filter">Format</label>
+            </div>
+          </div>
+          <div class="underline-filter"></div>
+        </div>
+        <div class="wheel-size-filter">
+          <div class="wheel-size-filter-header">
+            <h3 class="wheel-size-filter-title">Размер колеса</h3>
+            <div class="arrow-up"></div>
+          </div>
+          <div class="wheel-size-filter-main">
+            <div class="checkbox-name-container">
+              <input id="24" type="checkbox" class="filter-wheel-size" >
+              <label for="24" class="label-filter">24</label>
+            </div>
+            <div class="checkbox-name-container">
+              <input id="26" type="checkbox" class="filter-wheel-size" >
+              <label for="26" class="label-filter">26</label>
+            </div>
+            <div class="checkbox-name-container">
+              <input id="28" type="checkbox" class="filter-wheel-size" >
+              <label for="28" class="label-filter">28</label>
+            </div>
+            <div class="checkbox-name-container">
+              <input id="29" type="checkbox" class="filter-wheel-size" >
+              <label for="29" class="label-filter">29</label>
+            </div>
+
+          </div>
+          <div class="underline-filter"></div>
+        </div>
+        <div class="price-filter">
+          <div class="wheel-size-filter-header">
+            <h3 class="wheel-size-filter-title">Цена</h3>
+          </div>
+          <div id="slider"></div>
+          <div class="slider-values">
+            <p id="value-slider-1"></p>
+            <p id="value-slider-2"></p>
+          </div>
+          <script>
+            let slider = document.getElementById('slider');
+            let value1 = document.getElementById('value-slider-1');
+            let value2 = document.getElementById('value-slider-2');
+            noUiSlider.create(slider, {
+              start: [0, 10000],
+              connect: true,
+              range: {
+                'min': 0,
+                'max': 10000
+              }
+            });
+            slider.noUiSlider.on('update', function (values) {
+              value1.innerHTML = "BYN" + values[0] ;
+              value2.innerHTML = "BYN" + values[1];
+            });
+          </script>
+        </div>
+      </div>
+      <div class="items-list-main-info">
+        <div class="items-line-container-header">
+          <h2 class="items-amount">10 товаров</h2>
+        </div>
+        <div class="items-line-container">
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+        </div>
+        <div class="items-line-container">
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+          <div class="item-block">
+            <img class="item-img" src="pictures/jazz-2.jpg" alt="">
+            <p class="item-name">Aist Jazz 2.0</p>
+            <p class="item-characteristics">синий/оранжевый</p>
+            <p class="item-price">BYN1000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer-block">
+  <img class="decoration-triangle" src="pictures/triangle.png" alt="">
+  <div class="footer-text-block">
+    <h1 class="footer-title">Контакты</h1>
+    <p class="footer-paragraph">Магазин "Ротор-Про" (Husqvarna), г.Новополоцк, ул.Калинина 20, пом. 58</p>
+    <div class="footer-decoration-line"></div>
+    <p class="footer-paragraph">+375 33 344 14 00, +375 29 815 79 79, +375 29 335 47 52,  +375 33 334 26 00</p>
+    <div class="footer-decoration-line"></div>
+    <p class="footer-paragraph">E-mail: shoprotorpro@gmail.com</p>
+  </div>
+</footer>
+</body>
+</html>

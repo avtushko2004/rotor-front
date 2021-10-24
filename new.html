@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/nouislider/dist/nouislider.css">
+</head>
+<script src="node_modules/nouislider/dist/nouislider.js"></script>
+<body>
+<div id="slider"></div>
+<p id="vaule-1"></p>
+<script>
+  let slider = document.getElementById('slider');
+  let value1 = document.getElementById('vaule-1');
+
+  noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+      'min': 0,
+      'max': 100
+    }
+  });
+  slider.noUiSlider.on('update', function (values) {
+      console.log(values);
+      value1.innerText = values[0];
+
+  });
+</script>
+</body>
+</html>

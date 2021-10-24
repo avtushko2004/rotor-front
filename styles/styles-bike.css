@@ -1,0 +1,378 @@
+* {
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    /* margin: 0;
+    border: 0; */
+}
+
+.picture-btn {
+    cursor: pointer;
+}
+
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-width: 1220px;
+    font-size: 1rem;
+    user-select: none;
+}
+
+.main-header {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2em;
+    color: #000000;
+    margin-left: 0.64732em; 
+    cursor: default;
+    user-select: none;
+}
+
+.switch-panel {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width: 25%;
+    min-width: 128px;
+    flex-wrap: wrap;
+}
+
+.switch-сhainsaw {
+    margin-top: 0.9375em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.switch-bikes {
+    margin-top: 0.9375em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.indication-underline-block {
+    height: 10%;
+    width: 100%;
+}
+
+.indication-line {
+    height: 100%;
+    width: 50%;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    float: right;
+}
+
+.buttons-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    min-width: 192px;
+}
+
+.button-img {
+    height: 2.3em;
+    width: 2.3em;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.85em;
+    margin-right: 1.85em;
+}
+
+.navigator-btn {
+    font-size: 1.3em;
+}
+
+.promotion-picture {
+    width: 100%;
+    height: auto;
+}
+
+.list-title-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-title-text {
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    font-size: 2em;
+}
+
+.more-popular{
+    cursor: pointer;
+    font-size:1em;
+    margin-top:0.2em;
+}
+
+.bike-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bike-img-sale {
+    width: 100%;
+}
+
+.bike-block-sale {
+    display: flex;
+    flex-direction: column;
+    width: 11em;
+}
+
+
+.bike-name {
+    font-size: 1em;
+    margin: 0;
+}
+
+.bike-characteristics {
+    font-weight: bold;
+    font-size: 0.7em;
+    margin: 0;
+    opacity: 60%;
+    padding-top: 0;
+}
+
+.bike-price {
+    margin: 0;
+    padding-top: 0.17em;
+    font-size: 0.9em;
+}
+
+.more-btn {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    opacity: 60%;
+    
+}
+
+.text-underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.picture-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.picture-block {
+    display: flex;
+    width: 100%;
+}
+
+.bike-img {
+    width: 67.5%;
+}
+
+.ad-block {
+    display: flex;
+    width: 100%;
+    height: 35em;
+    background-color: white;
+    color: white;
+    justify-content: space-around;
+}
+
+.ad-text {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ad-title {
+    font-size: 1.5em;
+    margin: 0;
+    color:black;
+}
+
+.ad-btn {
+    display: flex;
+
+    align-items: center;
+    font-size: 2.625em;
+    margin: 0;
+    position: relative;
+    top: 50%;
+}
+
+.ad-btn-text {
+    margin: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 400;
+    color:black;
+}
+
+.ad-btn-img {
+    height: 1em;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.ad-img {
+    cursor: pointer;
+    height: 20em;
+    width: 40em;
+    margin-top: 0.8em;
+    margin-right: 1%;
+}
+.ad-items{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column;
+    width: 40%;
+}
+.ad-items-p1{
+    display: flex;
+    justify-content: space-around;
+}
+.ad-items-p2{
+    display: flex;
+    justify-content: space-around;
+}
+.bike-block-ad{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 14em;
+}
+.bike-img-ad{
+    width:100%;
+}
+.bike-name-ad{
+    color:black;
+    font-size:1em;
+    margin: 0;
+}
+.bike-characteristics-ad{
+    font-weight: 600;
+    font-size:0.7em;
+    color: black;
+    opacity: 60%;
+    margin: 0;
+}
+.bike-price-ad{
+    margin: 0;
+    font-size:0.8em;
+    color:black;
+}
+
+.mountain-bike-block {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    background-color: #373738;
+
+    font-family: 'roboto', sans-serif;
+}
+
+.bike-title {
+    display: flex;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    font-size: 2em;
+    width: auto;
+    width: 50%;
+}
+
+
+
+.bike-btn {
+    color: #000000;
+    background-color: #C4C4C4;
+    width: 58.7%;
+    height: 1.5em;
+    font-size: 2em;
+    border: 0;
+    border-radius: 20px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+
+
+/* @media screen and (max-width: 1550px) {
+    .bike-title {
+        font-size: 3em;
+    }
+
+    .bike-btn {
+        font-size: 2.5em;
+        border-radius: 10px;
+    }
+} */
+
+.town-bike-block {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    background-color: #8d6e5c;
+}
+.carousel{
+    display: none;
+}
+
+.footer-block {
+    align-items: center;
+    display: flex;
+    width: 94.6%;
+    height: 21em;
+    margin-left: 5.4%;
+}
+
+.decoration-triangle {
+    height: 100%;
+    width: 35.6%;
+    margin-left: 5.4%;
+    background-color: #373738;
+}
+
+.footer-text-block {
+    width: 60%;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.footer-paragraph {
+    font-size: 1.2em;
+}
+
+.footer-decoration-line {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+}
